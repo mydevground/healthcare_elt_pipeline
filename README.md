@@ -61,19 +61,19 @@ healthcare_elt_pipeline/
 └── requirements.txt                    
 ```
 
-⚙️How It Works
+### How It Works
 
-- Extract
+- Extract:
 Reads structured healthcare data from Excel files (Claims.xlsx, Patients.xlsx, Providers.xlsx).
-- Transform
+- Transform:
 Applies schema validation, deduplication, and normalization using modular Python scripts.
-- Load
+- Load:
 Inserts cleaned data into a SQLite database (healthcare.db) with schema enforcement.
-- Config Management
+- Config Management:
 Uses settings.yaml and .env for dynamic configuration and secure secret handling.
-- Validation
+- Validation:
 Includes automated tests for pipeline integrity and schema compliance.
-- Logging
+- Logging:
 Logs for data quality and pipeline progress
 
 
@@ -120,7 +120,7 @@ Logs will be written to `logs/pipeline.log` and the database will be created at 
 - **Invalid References**
 - **Idempotency**
 - **Missing Data**
-- **Invalid Date Formats**
+- **Invalid Date**
 - **Secure Config Option**
 
 
@@ -148,10 +148,10 @@ pytest tests/test_pipeline_validation.py
 
 Validates:
 - Row counts for each table
-- Relationships between tables
+- Table relationships
 - Referential integrity of claims
 
-### Validation Test Log Output
+#### Validation Test Log Output
 
 ![Validation Test Log Output](images/ELT_ValidationTestScreenshot.png)
 
@@ -167,7 +167,7 @@ Covers:
 - Amount validation
 - Reference filtering
 
-### Modules Test Log Output
+#### Modules Test Log Output
 
 ![Modules Test Log Output](images/ELT_ModulesTestScreenshot.png)
 
