@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.db
+*.log
+config/settings.yaml
+logs/
+venv/
+.env
