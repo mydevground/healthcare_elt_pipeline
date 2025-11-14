@@ -181,14 +181,14 @@ Covers:
 - Monitoring Strategy for Production (e.g Azure Monitor,New Relic, Splunk etc.)
 
 ---
-The above are discused bellow:
+The above are discused below:
 ---
 
 ## Scaling Strategy for Production Deployment (Azure Data Factory)
 
-To ensure scalability, maintainability, and secure operations in a production environment, the current ELT pipeline can be re-architected using **Azure Data Factory (ADF)**. This approach leverages native cloud services to orchestrate data workflows, enforce governance, and support enterprise-grade reliability.
+To ensure scalability, maintainability, and secure operations in a production environment, the current Healthcare ELT pipeline can be re-architected using **Azure Data Factory (ADF)**. This approach leverages native cloud services to orchestrate data workflows, enforce governance, and support enterprise-grade reliability.
 
-### My Recommended ADF Key Components and Flow
+### My Recommended ADF Key Components Process
 
 - **ADF Pipelines**  
   Coordinate end-to-end data ingestion from Azure Blob Storage, enabling modular orchestration of extract, transform, and load stages.
@@ -231,7 +231,7 @@ This flowchart illustrates the full production-grade pipeline:
 
 To support enterprise-scale healthcare data processing, the ELT pipeline can be re-implemented using **Azure Databricks**, leveraging Spark-based distributed computing, secure credential management, and modular orchestration.
 
-### My Recommended Azure Databricks Key Components and Flow
+### My Recommended Azure Databricks Key Components Process
 
 - **Extraction**  
   Source files such as Excel or CSV are ingested from Azure Blob Storage or Data Lake using Spark notebooks or Databricks Jobs. This replaces local file-based extraction with scalable, cloud-native ingestion.
@@ -263,7 +263,7 @@ To support enterprise-scale healthcare data processing, the ELT pipeline can be 
 
 ---
 
-##  Incremental Load Strategy For Production
+##  Incremental Load Strategy for Production
 
 To ensure efficient and reliable ingestion of healthcare data in production, this pipeline supports multiple incremental load patterns tailored to the nature of each source table.
 
@@ -337,7 +337,7 @@ This enables modular control and extensibility across environments.
 
 ##  Production Monitoring Strategy 
 
-Implementing a monitoring solution is essential for maintaining reliability, detecting anomalies, and supporting compliance in data pipelines. Below are three robust options tailored for cloud-native and hybrid environments:
+Implementing a monitoring solution is essential for maintaining reliability, detecting anomalies, and supporting compliance in data pipelines. Below are three robust options among many tailored for cloud-native and hybrid environments:
 
 ---
 
@@ -394,7 +394,15 @@ ADFActivityRun
 
 ---
 
+## Acknowledgments
 
+Thank you for exploring and using the **Healthcare ELT Pipeline**.
+
+This project is built with clarity, modularity, and real-world impact in mind empowering teams to deliver secure, scalable, and maintainable data solutions for healthcare data pipeline solutions.
+
+Whether you're contributing, learning, or deploying, your engagement helps drive better data practices and collaborative innovation.
+
+Feel free to fork, extend, and share, and let’s keep building together.
   
 
 
