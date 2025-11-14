@@ -97,7 +97,7 @@ pip install -r requirements.txt
 
 3. **Configure settings**
 
-Edit `Set the CONFIG_PATH to your config/settings.yaml in your .env file in the root folder`. src/config_loader.py will be using both .Yaml and .env. Update accordingly. With this flexibility, it can be modified later to use critical credentials in the future depending on the use case. For example, adding messaging services like email, slack, ms teams or monitoring tools like Azure monitor, New Relic, DataDog, Splunk and so on.
+Edit `Set the CONFIG_PATH to your config/settings.yaml in your .env file in the root folder. src/config_loader.py will be using both .Yaml and .env`. Update accordingly. With this flexibility, it can be modified later to use critical credentials in the future depending on the use case. For example, adding messaging services like email, slack, ms teams or monitoring tools like Azure monitor, New Relic, DataDog, Splunk and so on.
 
 ---
 
@@ -173,13 +173,15 @@ Covers:
 
 ---
 
-## Bellow I will be discussing Production Recommendations based on Experience and Best practices:
+## Alternatives for Production(Based on Experience and Best Practices):
 
 - Scaling Strategy for Production Deployment (Azure Data Factory)
 - Scaling Strategy for Production Deployment (Databricks or Azure Databricks)
 - Incremental Load Strategy for Production Deployment
 - Monitoring Strategy for Production (e.g Azure Monitor,New Relic, Splunk etc.)
 
+---
+The above are discused bellow:
 ---
 
 ## Scaling Strategy for Production Deployment (Azure Data Factory)
@@ -212,16 +214,15 @@ To ensure scalability, maintainability, and secure operations in a production en
 - Seamless integration with existing Azure services
 
 ---
-Here’s your visual diagram of the Healthcare ELT Architecture using Azure Data Factory
 
 This flowchart illustrates the full production-grade pipeline:
-•    Healthcare Files (Excel) ingested from Azure Blob Storage
-•    ADF Pipelines orchestrate the ELT flow
-•    Mapping Data Flows apply transformations and validations
-•    Config loaded from  and managed via Azure Key Vault
-•    Linked Services securely connect to Azure SQL Database
-•    Triggers schedule nightly or event-based runs
-•    Validation ensures data integrity and schema compliance
+- Healthcare Files (Excel) ingested from Azure Blob Storage
+- ADF Pipelines orchestrate the ELT flow
+- Mapping Data Flows apply transformations and validations
+- Config loaded from  and managed via Azure Key Vault
+- Linked Services securely connect to Azure SQL Database
+- Triggers schedule nightly or event-based runs
+- Validation ensures data integrity and schema compliance
 
 
 ---
